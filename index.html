@@ -3,151 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sawyer Cowan — Senior SRE</title>
+  <title>Sawyer Cowan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav id="nav">
     <div class="nav-inner">
-      <span class="nav-logo">SC</span>
+      <a href="#" class="nav-logo">Sawyer Cowan</a>
       <ul class="nav-links">
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
+  <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
-      <div class="hero-content">
-        <p class="hero-eyebrow">Senior Site Reliability Engineer</p>
-        <h1 class="hero-name">Sawyer<br>Cowan.</h1>
-        <p class="hero-bio">Five years keeping distributed systems alive — from Fidelity to JPMorgan Chase. I specialize in reliability, observability, and making infrastructure a lot less dramatic.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn-primary">Get in touch</a>
-          <a href="#experience" class="btn-ghost">View experience</a>
-        </div>
-        <div class="hero-meta">
-          <span>JPMorgan Chase</span>
-          <span class="sep">&middot;</span>
-          <span>AWS Certified</span>
-          <span class="sep">&middot;</span>
-          <span>Texas A&amp;M &rsquo;21</span>
-          <span class="sep">&middot;</span>
-          <span>Prosper, TX</span>
-        </div>
+      <img src="assets/profile.jpg" alt="Sawyer Cowan" class="hero-avatar" />
+      <h1 class="hero-name">Sawyer Cowan</h1>
+      <p class="hero-title">Senior Site Reliability Engineer</p>
+      <p class="hero-bio">Five years keeping distributed systems alive &mdash; from Fidelity to JPMorgan Chase. I specialize in reliability, observability, and making infrastructure a lot less dramatic.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get in touch</a>
+        <a href="#experience" class="btn-secondary">View experience</a>
       </div>
-      <div class="hero-photo-wrap">
-        <img src="assets/profile.jpg" alt="Sawyer Cowan" class="hero-photo" />
+      <div class="hero-divider"></div>
+      <div class="hero-meta">
+        <span>JPMorgan Chase</span>
+        <span>AWS Certified &times; 2</span>
+        <span>Texas A&amp;M &rsquo;21</span>
+        <span>Prosper, TX</span>
       </div>
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
   <section id="experience">
     <div class="section-inner">
-      <p class="section-label">Experience</p>
-      <h2>Work history</h2>
-      <div class="timeline">
+      <div class="section-intro">
+        <p class="label">Experience</p>
+        <h2>Work history</h2>
+      </div>
+      <div class="exp-cards">
 
-        <div class="timeline-item">
-          <div class="timeline-left">
-            <span class="tl-date">2024 &mdash; Now</span>
-            <span class="tl-company">JPMorgan Chase</span>
-            <span class="tl-location">Plano, TX</span>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-org">
+              <p class="exp-company">JPMorgan Chase</p>
+              <p class="exp-location">Plano, TX</p>
+            </div>
+            <span class="exp-date">Mar 2024 &mdash; Present</span>
           </div>
-          <div class="timeline-right">
-            <h3>Site Reliability Engineer III</h3>
-            <ul>
-              <li>Built a full-stack LLM tool to surface insights across 100k+ internal documents</li>
-              <li>Evaluated emerging technologies to strengthen system performance, stability, and security</li>
-              <li>Automated routine workflows through custom scripting, measurably lifting team productivity</li>
-              <li>Standardized incident management with documentation that actually gets used</li>
-            </ul>
-          </div>
+          <p class="exp-role">Site Reliability Engineer III</p>
+          <ul>
+            <li>Built a full-stack LLM tool to surface insights across 100k+ internal documents</li>
+            <li>Evaluated emerging technologies to strengthen system performance, stability, and security</li>
+            <li>Automated routine workflows through custom scripting, measurably lifting team productivity</li>
+            <li>Standardized incident management with documentation teams actually reference</li>
+          </ul>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-left">
-            <span class="tl-date">Jan &mdash; Mar 2024</span>
-            <span class="tl-company">Fidelity Investments</span>
-            <span class="tl-location">Westlake, TX</span>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-org">
+              <p class="exp-company">Fidelity Investments</p>
+              <p class="exp-location">Westlake, TX</p>
+            </div>
+            <span class="exp-date">Jan 2024 &mdash; Mar 2024</span>
           </div>
-          <div class="timeline-right">
-            <h3>Senior Site Reliability Engineer</h3>
-            <ul>
-              <li>Onboarded dozens of critical on-prem applications to Datadog monitoring</li>
-              <li>Applied SRE principles to reduce incident reoccurrence across 100+ business applications</li>
-              <li>Presented observability strategy and capabilities directly to executive stakeholders</li>
-            </ul>
-          </div>
+          <p class="exp-role">Senior Site Reliability Engineer</p>
+          <ul>
+            <li>Onboarded dozens of critical on-prem applications to Datadog monitoring</li>
+            <li>Applied SRE principles to reduce incident reoccurrence across 100+ applications</li>
+            <li>Presented observability strategy and tooling directly to executive stakeholders</li>
+          </ul>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-left">
-            <span class="tl-date">May &mdash; Dec 2023</span>
-            <span class="tl-company">Fidelity Investments</span>
-            <span class="tl-location">Westlake, TX</span>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-org">
+              <p class="exp-company">Fidelity Investments</p>
+              <p class="exp-location">Westlake, TX</p>
+            </div>
+            <span class="exp-date">May 2023 &mdash; Dec 2023</span>
           </div>
-          <div class="timeline-right">
-            <h3>Site Reliability Engineer</h3>
-            <ul>
-              <li>Deployed thousands of production monitors via Python and Terraform in Datadog</li>
-              <li>Implemented observability-as-code across organizational boundaries</li>
-              <li>Drove SRE adoption through engineering team education and hands-on enablement</li>
-            </ul>
-          </div>
+          <p class="exp-role">Site Reliability Engineer</p>
+          <ul>
+            <li>Deployed thousands of production monitors via Python and Terraform in Datadog</li>
+            <li>Implemented observability-as-code across organizational boundaries</li>
+            <li>Drove SRE adoption through engineering team education and hands-on enablement</li>
+          </ul>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-left">
-            <span class="tl-date">2021 &mdash; 2023</span>
-            <span class="tl-company">Fidelity Investments</span>
-            <span class="tl-location">Westlake, TX</span>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-org">
+              <p class="exp-company">Fidelity Investments</p>
+              <p class="exp-location">Westlake, TX</p>
+            </div>
+            <span class="exp-date">Jun 2021 &mdash; Apr 2023</span>
           </div>
-          <div class="timeline-right">
-            <h3>Systems Engineer</h3>
-            <ul>
-              <li>Maintained SLA compliance across 30+ production applications and services</li>
-              <li>Led incident response and root cause analysis via Datadog, CloudWatch, and Kibana</li>
-              <li>Supported disaster recovery and change/release management processes</li>
-            </ul>
-          </div>
+          <p class="exp-role">Systems Engineer</p>
+          <ul>
+            <li>Maintained SLA compliance across 30+ production applications and services</li>
+            <li>Led incident response and root cause analysis via Datadog, CloudWatch, and Kibana</li>
+            <li>Managed disaster recovery and change/release processes at scale</li>
+          </ul>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-left">
-            <span class="tl-date">Summer 2020</span>
-            <span class="tl-company">Fidelity Investments</span>
-            <span class="tl-location">Westlake, TX</span>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-org">
+              <p class="exp-company">Fidelity Investments</p>
+              <p class="exp-location">Westlake, TX</p>
+            </div>
+            <span class="exp-date">Jun 2020 &mdash; Jul 2020</span>
           </div>
-          <div class="timeline-right">
-            <h3>Problem Management Intern</h3>
-            <ul>
-              <li>Automated the post-mortem process, cutting weekly backlog significantly</li>
-              <li>Contributed technical perspective to daily and weekly incident calls</li>
-            </ul>
-          </div>
+          <p class="exp-role">Problem Management Intern</p>
+          <ul>
+            <li>Automated the post-mortem process, significantly cutting weekly backlog</li>
+            <li>Contributed technical perspective to daily and weekly incident calls</li>
+          </ul>
         </div>
 
       </div>
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills">
     <div class="section-inner">
-      <p class="section-label">Skills &amp; Certifications</p>
-      <div class="skills-layout">
+      <div class="section-intro">
+        <p class="label">Skills &amp; Certifications</p>
+        <h2>What I work with</h2>
+      </div>
+      <div class="skills-grid">
         <div>
-          <h2>What I work with</h2>
-          <div class="tag-grid">
+          <div class="tag-wrap">
             <span class="tag">Python</span>
             <span class="tag">Terraform</span>
             <span class="tag">Datadog</span>
@@ -160,20 +161,26 @@
             <span class="tag">Observability as Code</span>
           </div>
         </div>
-        <div>
-          <h2>Credentials</h2>
-          <div class="cert-list">
-            <div class="cert-item">
-              <p class="cert-name">AWS Solutions Architect Associate</p>
-              <p class="cert-sub">Amazon Web Services &bull; 2022</p>
+        <div class="certs-col">
+          <div class="cert-card">
+            <span class="cert-badge">AWS</span>
+            <div>
+              <p class="cert-name">Solutions Architect Associate</p>
+              <p class="cert-year">2022</p>
             </div>
-            <div class="cert-item">
-              <p class="cert-name">AWS Cloud Practitioner</p>
-              <p class="cert-sub">Amazon Web Services &bull; 2022</p>
+          </div>
+          <div class="cert-card">
+            <span class="cert-badge">AWS</span>
+            <div>
+              <p class="cert-name">Cloud Practitioner</p>
+              <p class="cert-year">2022</p>
             </div>
-            <div class="cert-item cert-edu">
+          </div>
+          <div class="cert-card">
+            <span class="cert-badge edu">A&amp;M</span>
+            <div>
               <p class="cert-name">B.S. Computer Engineering</p>
-              <p class="cert-sub">Texas A&amp;M University &bull; Class of 2021</p>
+              <p class="cert-year">Texas A&amp;M University &mdash; 2021</p>
             </div>
           </div>
         </div>
@@ -181,30 +188,34 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
     <div class="section-inner">
-      <p class="section-label">Contact</p>
+      <p class="label label-light">Contact</p>
       <h2 class="contact-heading">Let&rsquo;s talk.</h2>
       <p class="contact-sub">Open to new opportunities, collaborations, or just a good conversation.</p>
-      <div class="contact-links">
-        <a href="mailto:sawyercowan181@gmail.com" class="contact-link">
+      <div class="contact-row">
+        <a href="mailto:sawyercowan181@gmail.com" class="contact-pill">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           sawyercowan181@gmail.com
         </a>
-        <a href="tel:+15128207800" class="contact-link">
+        <a href="tel:+15128207800" class="contact-pill">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 5.97 5.97l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
           (512) 820-7800
         </a>
-        <a href="https://www.linkedin.com/in/sawyer-cowan/" target="_blank" rel="noopener" class="contact-link">
+        <a href="https://www.linkedin.com/in/sawyer-cowan/" target="_blank" rel="noopener" class="contact-pill">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          linkedin.com/in/sawyer-cowan
+          LinkedIn
         </a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Sawyer Cowan &bull; Prosper, TX &bull; 2025</p>
+    <div class="footer-inner">
+      <span>Sawyer Cowan</span>
+      <span>&copy; 2025</span>
+    </div>
   </footer>
 
   <script src="main.js"></script>

@@ -1,19 +1,7 @@
-// Nav: transparent on dark hero, frosted white after
-const nav = document.getElementById('nav');
-const hero = document.getElementById('hero');
-
-function updateNav() {
-  const heroBtm = hero.offsetTop + hero.offsetHeight;
-  const scrolled = window.scrollY;
-  nav.classList.toggle('light', scrolled >= heroBtm - nav.offsetHeight);
-  nav.classList.toggle('dark-scrolled', scrolled > 20 && scrolled < heroBtm - nav.offsetHeight);
-}
-window.addEventListener('scroll', updateNav, { passive: true });
-updateNav();
-
 // Mobile menu
 const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
+
 toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
@@ -27,9 +15,11 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.08 });
+}, { threshold: 0.07 });
 
-document.querySelectorAll('.hero-content, .hero-photo-wrap, .timeline-item, .tag-grid, .cert-list, .contact-links').forEach(el => {
-  el.classList.add('fade-in');
+document.querySelectorAll(
+  '.hero-inner, .exp-card, .tag-wrap, .certs-col, .contact-heading, .contact-row'
+).forEach(el => {
+  el.classList.add('fade-up');
   observer.observe(el);
 });
